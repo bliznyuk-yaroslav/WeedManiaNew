@@ -1,30 +1,97 @@
-.header {
-  padding: 20px 0;
-}
+header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  .logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 4px;
 
-  @include media(tablet) {
-    justify-content: flex-start;
+    @include media(desktop) {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+    }
   }
 
   @include media(desktop) {
-    justify-content: flex-end;
+    width: 1028px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+button {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 12.5px 10px 13.5px 10px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: $_main_color_white;
+  border: none;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
+nav {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-list-right {
+    display: flex;
+    width: 420px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 49px;
+    flex-shrink: 0;
+
+    li {
+      display: flex;
+      box-sizing: content-box;
+      max-width: 140px;
+      padding: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      color: #181818;
+    }
+  }
+  .nav-list-left {
+    display: flex;
+    align-items: center;
+    li {
+      display: flex;
+      box-sizing: border-box;
+      width: 140px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: #181818;
+      text-align: center;
+      font-feature-settings: 'liga' off;
+    }
+  }
 }
+
+// .nav-link {
+//   font-weight: 500;
+//   letter-spacing: 0.02em;
+//   @include font(30, 40);
+//   color: $_header_color;
+// }
+
+// .nav-link:hover,
+// .nav-link:focus {
+//   color: $_header_accent_color;
+// }
