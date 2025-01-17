@@ -23,6 +23,11 @@ header {
   }
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   display: flex;
   width: 44px;
@@ -46,29 +51,32 @@ nav {
     display: flex;
     justify-content: space-between;
   }
+
   .nav-list-right {
     display: flex;
     width: 420px;
     justify-content: flex-end;
     align-items: center;
     gap: 49px;
-    flex-shrink: 0;
+
+    li:first-child {
+      white-space: nowrap;
+    }
 
     li {
       display: flex;
-      box-sizing: content-box;
-      max-width: 140px;
+      width: 140px;
       padding: 10px;
-      justify-content: flex-end;
       align-items: center;
-      gap: 10px;
-      flex-shrink: 0;
+      justify-content: center;
       color: #181818;
     }
   }
+
   .nav-list-left {
     display: flex;
     align-items: center;
+
     li {
       display: flex;
       box-sizing: border-box;
@@ -83,15 +91,3 @@ nav {
     }
   }
 }
-
-// .nav-link {
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   @include font(30, 40);
-//   color: $_header_color;
-// }
-
-// .nav-link:hover,
-// .nav-link:focus {
-//   color: $_header_accent_color;
-// }
