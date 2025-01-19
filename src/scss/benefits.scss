@@ -9,6 +9,7 @@
   background: $_main_color_white;
   gap: 40px;
   overflow: hidden;
+  position: relative;
 
   @include media(desktop) {
     width: 1200px;
