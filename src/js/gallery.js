@@ -20,8 +20,8 @@ const swiper = new Swiper('#gallery-slider', {
                 class="${className}"
                 alt="leaf-${index + 1}"
                 aria-label="Slide ${index + 1}"
-                data-active-src="./img/general/mobile/gall@2x.png"
-                data-default-src="./img/general/mobile/gall2@2x.png" />`;
+                data-active-src="/img/general/mobile/gall@2x.png"
+                data-default-src="/img/general/mobile/gall2@2x.png" />`;
     },
   },
 
