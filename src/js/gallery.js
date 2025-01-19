@@ -1,5 +1,7 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
+import gallImage from '../img/general/mobile/gall2@2x.png';
+import gallActiveImage from '../img/general/mobile/gall@2x.png';
 
 const swiper = new Swiper('#gallery-slider', {
   loop: false,
@@ -16,12 +18,12 @@ const swiper = new Swiper('#gallery-slider', {
     clickable: true,
     renderBullet: (index, className) => {
       return `<img
-                src="/img/general/mobile/gall2@2x.png"
+               src="${gallImage}"
                 class="${className}"
                 alt="leaf-${index + 1}"
                 aria-label="Slide ${index + 1}"
-                data-active-src="/img/general/mobile/gall@2x.png"
-                data-default-src="/img/general/mobile/gall2@2x.png" />`;
+              data-active-src="${gallActiveImage}"
+                data-default-src="${gallImage}" />`;
     },
   },
 
