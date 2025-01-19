@@ -1,0 +1,107 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px 24px 16px;
+  margin: 0 auto;
+  width: 320px;
+  background: $_main_color_white;
+  gap: 40px;
+  overflow: hidden;
+
+  @include media(desktop) {
+    width: 1200px;
+    padding: 100px 0px 0px 0px;
+  }
+}
+
+.benefits .swiper-slide-active {
+  width: 230px;
+  margin-right: 0;
+
+  @include media(desktop) {
+    width: 300px;
+  }
+}
+
+.list-benefits {
+  display: inline-flex;
+  align-items: center;
+}
+
+.list-benefits .swiper-slide {
+  width: 230px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+
+  @include media(desktop) {
+    width: 300px;
+  }
+}
+
+.image-benefits {
+  width: 230px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+
+  @include media(desktop) {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+.list-benefits li:nth-child(1) .image-benefits {
+  background: url('/img/benefits/desktop/benefits1@2x.jpg') lightgray 50% /
+    cover no-repeat;
+}
+
+.list-benefits li:nth-child(2) .image-benefits {
+  background: url('/img/benefits/desktop/benefits2@2x.jpg') lightgray 50% /
+    cover no-repeat;
+}
+
+.list-benefits li:nth-child(3) .image-benefits {
+  background: url('/img/benefits/desktop/benefits6@2x.jpg') lightgray 50% /
+    cover no-repeat;
+}
+
+.list-benefits li:nth-child(4) .image-benefits {
+  background: url('/img/benefits/desktop/benefits4@2x.jpg') lightgray 50% /
+    cover no-repeat;
+}
+
+.list-benefits li:nth-child(5) .image-benefits {
+  background: url('/img/benefits/desktop/benefits3@2x.jpg') lightgray 50% /
+    cover no-repeat;
+}
+
+.wrapper-text {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  height: 176px;
+  gap: 16px;
+
+  h3 {
+    width: 198px;
+    @include font(24, 36);
+    font-weight: 700;
+  }
+  @include media(desktop) {
+    height: 181px;
+  }
+}
+
+// @include media(desktop) {
+//   .list-benefits li:first-child {
+//     margin-left: -214px;
+//   }
+//   .list-benefits li:last-child {
+//     margin-right: -214px;
+//   }
+// }
