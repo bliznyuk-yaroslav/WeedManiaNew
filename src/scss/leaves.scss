@@ -1,12 +1,13 @@
 .leaves {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   width: 320px;
   background: $_main_color_white;
   position: relative;
   z-index: 1;
+
+  @include media(desktop) {
+    width: 1200px;
+  }
 }
 
 .leaves-container {
@@ -19,6 +20,15 @@
   background-color: transparent;
   background-image: url(/img/general/mobile/foter-leafs@2x.png);
   background-repeat: no-repeat;
-  background-size: 336px;
+  background-size: 320px;
   z-index: 2;
+
+  @include media(desktop) {
+    height: 181px;
+    width: 1200px;
+    background-size: 1200px;
+    background-image: url(../img/general/desktop/footer-leafs@2x.png);
+    z-index: 8;
+    top: -120px;
+  }
 }
