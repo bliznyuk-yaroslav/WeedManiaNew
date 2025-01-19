@@ -10,8 +10,10 @@
   align-items: flex-start;
   background: #181818;
   position: relative;
+  z-index: 3;
 
   @include media(desktop) {
+    z-index: -1;
     flex-direction: row;
     width: 1200px;
     padding: 108px 86px 108px 86px;
