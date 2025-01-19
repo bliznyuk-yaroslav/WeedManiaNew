@@ -1,0 +1,272 @@
+.foote-cont {
+  height: 200px;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(24, 24, 24);
+  overflow: hidden;
+  width: 320px;
+  @include media(desktop) {
+    height: 111px;
+    width: 1200px;
+  }
+}
+
+.leaf {
+  width: 100%;
+  padding: 0;
+  height: 47px;
+  background-color: rgb(255, 255, 255);
+}
+@keyframes windEffect {
+  0% {
+    transform: translate(0, 0) rotate(-1.28deg);
+  }
+  25% {
+    transform: translate(2px, -1.5px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(-2px, 1.5px) rotate(1deg);
+  }
+  75% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-1.28deg);
+  }
+}
+.leaf1 {
+  position: absolute;
+  width: 48.01px;
+  height: 47.82px;
+  top: 17.1px;
+  left: -21.85px;
+  background: url(../img/general/mobile/choose4.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-2.28deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+  transition: transform 0.1s ease-out;
+}
+
+.leaf2 {
+  position: absolute;
+  z-index: 999;
+  width: 58.96px;
+  height: 58.74px;
+  top: 0px;
+  left: 14.9px;
+  background: url(../img/general/mobile/choose1.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-7.08deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf3 {
+  position: absolute;
+  z-index: 1;
+  width: 66.48px;
+  height: 66.22px;
+  top: 11.93px;
+  left: 47.59px;
+  background: url(../img/general/mobile/choose2.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-2.26deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf4 {
+  position: absolute;
+  z-index: 1;
+  width: 36.8px;
+  height: 36.66px;
+  top: 25.51px;
+  left: 95.61px;
+  background: url(../img/general/mobile/choose1.png) no-repeat;
+  background-size: cover;
+  transform: rotate(8deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf5 {
+  position: absolute;
+  z-index: 2;
+  width: 52.3px;
+  height: 52.1px;
+  top: 15.6px;
+  left: 124.17px;
+  background: url(../img/general/mobile/choose4.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-5.49deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf6 {
+  position: absolute;
+  z-index: 1;
+  width: 19.6px;
+  height: 19.9px;
+  top: 33.91px;
+  left: 167.85px;
+  background: url(../img/general/mobile/choose1.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-16.65deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf7 {
+  position: absolute;
+  z-index: 1;
+  width: 27.66px;
+  height: 27.58px;
+  top: 30.03px;
+  right: 105.99px;
+  background: url(../img/general/mobile/choose2.png) no-repeat;
+  background-size: cover;
+  transform: rotate(22.21deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf8 {
+  position: absolute;
+  z-index: 99;
+  width: 15.56px;
+  height: 15.5px;
+  top: 39.73px;
+  right: 101.84px;
+  background: url(../img/general/mobile/choose4.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-4.6deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf9 {
+  position: absolute;
+  z-index: 5;
+  width: 26.19px;
+  height: 26.29px;
+  top: 33.89px;
+  right: 81.83px;
+  background: url(../img/general/mobile/choose1.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-1.7deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf10 {
+  position: absolute;
+  z-index: 10;
+  width: 14.36px;
+  height: 16.3px;
+  top: 39.79px;
+  right: 75.21px;
+  background: url(../img/general/mobile/choose2.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-1.7deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf11 {
+  position: absolute;
+  z-index: 1;
+  width: 35.09px;
+  height: 34.95px;
+  top: 30.08px;
+  right: 51.79px;
+  background: url(../img/general/mobile/choose4.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-0.28deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf12 {
+  position: absolute;
+  z-index: 1;
+  width: 20.71px;
+  height: 20.63px;
+  top: 36.48px;
+  right: 47.01px;
+  background: url(../img/general/mobile/choose2.png) no-repeat;
+  background-size: cover;
+  transform: rotate(-0.28deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf13 {
+  position: absolute;
+  z-index: 1;
+  width: 28.99px;
+  height: 28.88px;
+  top: 31.32px;
+  right: 22.56px;
+  background: url(../img/general/mobile/choose1.png);
+  background-size: cover;
+  transform: rotate(-1.7deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.leaf14 {
+  position: absolute;
+  z-index: 1;
+  width: 42.18px;
+  height: 42.02px;
+  top: 22.25px;
+  right: -11.17px;
+  background: url(../img/general/mobile/choose2.png);
+  background-size: cover;
+  transform: rotate(9.64deg);
+  background-position: center;
+  animation: windEffect 3s ease-in-out infinite;
+}
+.trash {
+  display: none;
+}
+.list-foot {
+  padding: 29px 16px 24px 16px;
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-align: center;
+
+  .item-foot {
+    margin-bottom: 8px;
+  }
+  .rights {
+    display: block;
+    text-align: center;
+  }
+  .rights {
+    display: block;
+  }
+}
+@include media(desktop) {
+  .leaf {
+  }
+  .list-foot {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .item-foot p {
+    margin-bottom: 0;
+    display: flex;
+    gap: 5px;
+  }
+  .trash {
+    display: flex;
+  }
+  .list-foot li:nth-child(3) {
+    order: 5;
+  }
+  .list-foot li:nth-child(4) {
+    order: 4;
+  }
+  .list-foot li:nth-child(5) {
+    order: 3;
+  }
+}
