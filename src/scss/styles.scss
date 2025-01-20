@@ -7,15 +7,14 @@
 @import './hero.scss';
 @import './play.scss';
 @import './leaves.scss';
-@import './vite-promo.scss';
 
 :root {
   font-family: 'Lato', sans-serif;
   @include font(18, 27);
   font-weight: 400;
 
-  color: #000;
-  background-color: #fff;
+  color: $_main_color_black;
+  background-color: $_main_color_white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,7 +28,6 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
-  background: rgb(24, 24, 24);
   min-width: 289px;
   overflow: hidden;
 
