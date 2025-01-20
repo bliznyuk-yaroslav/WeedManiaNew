@@ -5,11 +5,198 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 3</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="/WeedManiaNew/assets/privacy_terms-099c870e.css">
+    <link rel="stylesheet" href="/WeedManiaNew/assets/styles-c7257c95.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 3</h1>
+    <section class="privacy-policy">
+      <div class="container-go-to-home">
+        <a href="./index.html"
+          ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAYAAADj79JYAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAbISURBVHgB7ZxNSORIFMeftjIKfu3FD0TI3gYUxj14WC8bb95GEYQ92Qp63QU9LB609bLsST254KHdi+BBZuaki0L3XNzBg7qgB0EwoKKisOMH2h7Ufa/NgJOpdCqppBLb+kFITFWSzj/PV69eVQKgUCgUCoWCiwJ4IVQhr169GqXt29vbsc8IhEARvBBKSkomcBU3t6tw1Qsh8CIsvLa2VsPVnmV32/HxcRokUwgvgyRj3yiEQN4Ljtat40pnFOlmmVRegoWPeiwLhLz24Ta+24pUX57vFu5owQ8PD29BIvkuuM5RJ04xOkgibwVHdxLHleZUr6CggDpEP4Ek8lZwFJLbVWDdX0ES+exSdN6K6MebZbmVvBSc4msUkVtAcivY3W8GCeSl4G7cyRdkRSv56lJ0cI8OEohMx+eLDxVNm2qaVpXJZP4DD+Bx34le3+k+IpGera6u7ojFYknyu+h/0+gS3uP2B+wBGuASFM2zLy4uLtZwtQkuMXu0cVwovNTNfcwebCQELywsfPukkaMGT8f1ZE1NzSaKP4nbH3nFx/pv8HjwAj70N8ApOFlyaWlpD16rA9juqAeXtHVnVHy4wdqJ4pG1zuKyhxaTNC3JCZ46TCg8dKpDvwENYQLF3sP6ZAy6zbmYDy4qgn/kqBMHPuFzleWEwkO7MromXZt+A3WUnMLO+/t75j1FQnDydXgTvI1VHHII7yb+ZqBZd5DrwOsk4DHrGAc+jNPT00hbODEL7ojjkkIxeiz7NfCO9vQPyseQ6wD3efO0XUFkBKeoBNyj4TLrwr9zYVp1CjeTHv9jxuwKIjUAYd6kDt4w7u7uOjHSeAferdyAx9H8pNdzUGN5cnLyg1151KZJGOAdDcXeAAHImrEtSYEAZhhrXw4RwWyYQhlJ9xEDA4Dvc1UI3cLJX2KmjqyiB54/CacKoVq4Of0sZXZwvqGhoQHOz8/h4uICngGO1k2EFqVQVIGWvWEn9vj4OKytrcHOzk52+xmQ4KkUioXX19c3Y0TBjCYqKiogmUxCa2vrV/u3tragq6srqtbOZd2EdAunzgR2eykS0Kxl5EJWVla+EZtoamrKllGdCNLGW1Gq4HV1dTRYy+xMkKALCws5BaUypzohkHCTRo6BJMyw73dWGVn03Nwc5cXBicrKSuju7obd3d3sEjLkSjrdHBC44FWP/Imbv7DKBwYGYHp6GjBaAV6wsYWOjo6sP19fX4cwMJNtP15dXbkaIQpU8CdhXzurfGhoCIaHh8ErbW1tdOOwuroKskG3+Bt24f8GlwQmOIV9RUVF/6Agr1nlU1NT0N/fD6KQOyI3k0oJ9chdgWJnrRojqlrMJt5eX18f8x4bSFjoJewTJeSw0cCH8B6Na8qpAfVdcAr78MITrEgk6Chjf38/KzqtQySNy5jdFGhfw0LRsE+UiISNOi4pHPdkzlf0TXAK+1DoCVYZuQ9ZQtA1lpeXob29HcKEZg+w9vvSaOZKrXoJ+0QJO2w0Q8afWSGjsODm0NY7Vplo2CdKCGEjDYZP3tzc9J6dnTEjFz/y4UzLprCPeoRhMzg4mI2MRkZGICAMeBwAT2ND6TjdQzhKwYZywzqBhtKpfsTYfkJWThGMIAZa8CYm37LrTCbzwe1cRGHB0aV8Na+ssbExm9WLIi0tLXBwcMBbncLbNG2gizj3691834fYqNcXVSiCcSP40dHRX+AzoY9pUidlZmYGFhcXuY+hh0pxPfnnAEPN7JvKfr/DGargXrvjZKXb29uwtLSUje/JjQlggM0cFPOtiDT4SGhjmjQ43NfXJ5T7oHP09vYKncMcGqPJP4a1DH14B/hMaIKTdfqR86BzzM/Pgwgo+ixLeEpIgc+E5lLIJTAwwAGaUmzN1dicyzUkPK5mzWxnJea7eaZRuyI0wckdMIg7dR7MT24Emvw+PDx0/doJLy/lAzWRQQkuGSW4ZJTgklGCS0YJLhkluGSU4JJRgktGCS4ZJbhklOCSERbc+o68X5m7IIjCbxMW3PqZCsoCBjglwTP0mxgDFWmQjB+j9jQvJWHdT3NBaLGDbp4hgO4lPevxWgSlg30fKM6FcD68pKRkKpPJxMEyLpjjJoWIxWKfcXAAfLiWAXzfafEVYZdiGAb5cF8+748P7l+nOsXFxYaLb6vYgg+u08s3tUTxJUqhqQR4A/QFBQO8k+CZbGM+4DHwjoGLHuSoTi58e+Xk8vLyuKysjL55QlZKY44a56H09kACxw//4KwPV1dXn8rLy0n41+a1cmL+R3zCZRb/i2ii5Q4oFAqFQqFQKBQKhUKhUCgUCoVCoQiM/wHoTrvKrukcagAAAABJRU5ErkJggg==" alt="Home" />
+          <p>Go to home</p></a
+        >
+      </div>
+      <div class="img-bg"></div>
+      <div class="container-content">
+        <div class="container-title">
+          <h1>Terms & Conditions</h1>
+        </div>
+        <div>
+          <p>
+            These terms and conditions applies to the Weed Mania: Chill 420 Club
+            app (hereby referred to as "Application") for mobile devices that
+            was created by (hereby referred to as "Service Provider") as a Free
+            service.
+          </p>
+        </div>
+        <p>
+          Upon downloading or utilizing the Application, you are automatically
+          agreeing to the following terms. It is strongly advised that you
+          thoroughly read and understand these terms prior to using the
+          Application. Unauthorized copying, modification of the Application,
+          any part of the Application, or our trademarks is strictly prohibited.
+          Any attempts to extract the source code of the Application, translate
+          the Application into other languages, or create derivative versions
+          are not permitted. All trademarks, copyrights, database rights, and
+          other intellectual property rights related to the Application remain
+          the property of the Service Provider.
+        </p>
+
+        <p>
+          The Service Provider is dedicated to ensuring that the Application is
+          as beneficial and efficient as possible. As such, they reserve the
+          right to modify the Application or charge for their services at any
+          time and for any reason. The Service Provider assures you that any
+          charges for the Application or its services will be clearly
+          communicated to you.
+        </p>
+
+        <p>
+          The Service Provider may use the information you provided to contact
+          you from time to time to provide you with important information,
+          required notices and marketing promotions.
+        </p>
+        <p>
+          The Application stores and processes personal data that you have
+          provided to the Service Provider in order to provide the Service. It
+          is your responsibility to maintain the security of your phone and
+          access to the Application. The Service Provider strongly advise
+          against jailbreaking or rooting your phone, which involves removing
+          software restrictions and limitations imposed by the official
+          operating system of your device. Such actions could expose your phone
+          to malware, viruses, malicious programs, compromise your phone's
+          security features, and may result in the Application not functioning
+          correctly or at all. Please note that the Application utilizes
+          third-party services that have their own Terms and Conditions. Below
+          are the links to the Terms and Conditions of the third-party service
+          providers used by the Application:
+        </p>
+
+        <div class="third-party-access wrapper-access">
+          <ul>
+            <li class="link-access">
+              <a href="https://policies.google.com/privacy"
+                >Google Play Services</a
+              >
+            </li>
+            <li class="link-access">
+              <a href="https://firebase.google.com/support/privacy?hl=ru"
+                >Google Analytics for Firebase</a
+              >
+            </li>
+            <li class="link-access">
+              <a href="https://www.facebook.com/about/privacy/update/printable"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          Please be aware that the Service Provider does not assume
+          responsibility for certain aspects. Some functions of the Application
+          require an active internet connection, which can be Wi-Fi or provided
+          by your mobile network provider. The Service Provider cannot be held
+          responsible if the Application does not function at full capacity due
+          to lack of access to Wi-Fi or if you have exhausted your data
+          allowance.
+        </p>
+
+        <p>
+          If you are using the application outside of a Wi-Fi area, please be
+          aware that your mobile network provider's agreement terms still apply.
+          Consequently, you may incur charges from your mobile provider for data
+          usage during the connection to the application, or other third-party
+          charges. By using the application, you accept responsibility for any
+          such charges, including roaming data charges if you use the
+          application outside of your home territory (i.e., region or country)
+          without disabling data roaming. If you are not the bill payer for the
+          device on which you are using the application, they assume that you
+          have obtained permission from the bill payer.
+        </p>
+
+        <p>
+          Similarly, the Service Provider cannot always assume responsibility
+          for your usage of the application. For instance, it is your
+          responsibility to ensure that your device remains charged. If your
+          device runs out of battery and you are unable to access the Service,
+          the Service Provider cannot be held responsible.
+        </p>
+        <p>
+          In terms of the Service Provider's responsibility for your use of the
+          application, it is important to note that while they strive to ensure
+          that it is updated and accurate at all times, they do rely on third
+          parties to provide information to them so that they can make it
+          available to you. The Service Provider accepts no liability for any
+          loss, direct or indirect, that you experience as a result of relying
+          entirely on this functionality of the application.
+        </p>
+
+        <p>
+          The Service Provider may wish to update the application at some point.
+          The application is currently available as per the requirements for the
+          operating system (and for any additional systems they decide to extend
+          the availability of the application to) may change, and you will need
+          to download the updates if you want to continue using the application.
+          The Service Provider does not guarantee that it will always update the
+          application so that it is relevant to you and/or compatible with the
+          particular operating system version installed on your device. However,
+          you agree to always accept updates to the application when offered to
+          you. The Service Provider may also wish to cease providing the
+          application and may terminate its use at any time without providing
+          termination notice to you. Unless they inform you otherwise, upon any
+          termination, (a) the rights and licenses granted to you in these terms
+          will end; (b) you must cease using the application, and (if necessary)
+          delete it from your device.
+        </p>
+
+        <div class="changes wrapper-access">
+          <h2>Changes to These Terms and Conditions</h2>
+          <p>
+            The Service Provider may periodically update their Terms and
+            Conditions. Therefore, you are advised to review this page regularly
+            for any changes. The Service Provider will notify you of any changes
+            by posting the new Terms and Conditions on this page.
+          </p>
+          <p>These terms and conditions are effective as of 2025-01-02</p>
+        </div>
+
+        <div class="contact-us wrapper-access">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions or suggestions about the Terms and
+            Conditions, please do not hesitate to contact the Service Provider
+            at Weed420@info.com.
+          </p>
+        </div>
+      </div>
     </section>
+    <footer class="foote-cont container">
+  <ul class="list-foot">
+    <li class="item-foot"><a href="../privacy.html">Privacy Policy</a></li>
+    <li class="trash item-foot"><p>|</p></li>
+    <li class="item-foot"><a href="../terms.html">Terms of Service</a></li>
+    <li class="trash item-foot"><p>|</p></li>
+    <li class="item-foot">
+      <p>
+        ©2024 JoyfulPathZone.com
+        <span class="rights"> All Rights Reserved.</span>
+      </p>
+    </li>
+  </ul>
+</footer>
+
   </body>
 </html>

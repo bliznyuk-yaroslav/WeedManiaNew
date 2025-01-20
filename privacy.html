@@ -5,11 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="/WeedManiaNew/assets/privacy_terms-099c870e.css">
+    <link rel="stylesheet" href="/WeedManiaNew/assets/styles-c7257c95.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
+    <section class="privacy-policy">
+      <div class="container-go-to-home">
+        <a href="./index.html"
+          ><img src="data:image/png;base64,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" alt="Home" />
+          <p>Go to home</p></a
+        >
+      </div>
+      <div class="img-bg"></div>
+      <div class="container-content">
+        <div class="container-title">
+          <h1>Privacy Policy</h1>
+        </div>
+        <p>
+          This privacy policy applies to the Weed Mania: Chill 420 Club app
+          (hereby referred to as "Application") for mobile devices that was
+          created by (hereby referred to as "Service Provider") as a Free
+          service. This service is intended for use "AS IS".
+        </p>
+
+        <div class="info-collection wrapper-access">
+          <h2>Information Collection and Use</h2>
+          <p>
+            The Application collects information when you download and use it.
+            This information may include information such as
+          </p>
+          <ul>
+            <li>Your device's Internet Protocol address (e.g. IP address)</li>
+            <li>
+              The pages of the Application that you visit, the time and date of
+              your visit, the time spent on those pages
+            </li>
+            <li>The time spent on the Application</li>
+            <li>The operating system you use on your mobile device</li>
+          </ul>
+          <p>
+            The Application does not gather precise information about the
+            location of your mobile device.
+          </p>
+          <p>
+            The Service Provider may use the information you provided to contact
+            you from time to time to provide you with important information,
+            required notices and marketing promotions.
+          </p>
+          <p>
+            For a better experience, while using the Application, the Service
+            Provider may require you to provide us with certain personally
+            identifiable information. The information that the Service Provider
+            request will be retained by them and used as described in this
+            privacy policy.
+          </p>
+        </div>
+        <div class="third-party-access wrapper-access">
+          <h2>Third Party Access</h2>
+          <p>
+            Only aggregated, anonymized data is periodically transmitted to
+            external services to aid the Service Provider in improving the
+            Application and their service. The Service Provider may share your
+            information with third parties in the ways that are described in
+            this privacy statement.
+          </p>
+          <p>
+            Please note that the Application utilizes third-party services that
+            have their own Privacy Policy about handling data. Below are the
+            links to the Privacy Policy of the third-party service providers
+            used by the Application:
+          </p>
+          <ul>
+            <li class="link-access">
+              <a href="https://policies.google.com/privacy"
+                >Google Play Services</a
+              >
+            </li>
+            <li class="link-access">
+              <a href="https://firebase.google.com/support/privacy?hl=ru"
+                >Google Analytics for Firebase</a
+              >
+            </li>
+            <li class="link-access">
+              <a href="https://www.facebook.com/about/privacy/update/printable"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+          <p>
+            The Service Provider may disclose User Provided and Automatically
+            Collected Information:
+          </p>
+          <ul>
+            <li class="list-item">
+              as required by law, such as to comply with a subpoena, or similar
+              legal process;
+            </li>
+            <li class="list-item">
+              when they believe in good faith that disclosure is necessary to
+              protect their rights, protect your safety or the safety of others,
+              investigate fraud, or respond to a government request;
+            </li>
+            <li class="list-item">
+              with their trusted services providers who work on their behalf, do
+              not have an independent use of the information we disclose to
+              them, and have agreed to adhere to the rules set forth in this
+              privacy statement.
+            </li>
+          </ul>
+        </div>
+        <div class="opt-out-rights wrapper-access">
+          <h2>Opt-Out Rights</h2>
+          <p>
+            You can stop all collection of information by the Application easily
+            by uninstalling it. You may use the standard uninstall processes as
+            may be available as part of your mobile device or via the mobile
+            application marketplace or network.
+          </p>
+        </div>
+        <div class="data-retention-policy wrapper-access">
+          <h2>Data Retention Policy</h2>
+          <p>
+            The Service Provider will retain User Provided data for as long as
+            you use the Application and for a reasonable time thereafter. If
+            you'd like them to delete User Provided Data that you have provided
+            via the Application, please contact them at Weed420@info.com and
+            they will respond in a reasonable time.
+          </p>
+        </div>
+        <div class="children wrapper-access">
+          <h2>Children</h2>
+          <p>
+            The Service Provider does not use the Application to knowingly
+            solicit data from or market to children under the age of 13.
+          </p>
+          <p>
+            The Application does not address anyone under the age of 13. The
+            Service Provider does not knowingly collect personally identifiable
+            information from children under 13 years of age. In the case the
+            Service Provider discover that a child under 13 has provided
+            personal information, the Service Provider will immediately delete
+            this from their servers. If you are a parent or guardian and you are
+            aware that your child has provided us with personal information,
+            please contact the Service Provider (Weed420@info.com) so that they
+            will be able to take the necessary actions.
+          </p>
+        </div>
+        <div class="security wrapper-access">
+          <h2>Security</h2>
+          <p>
+            The Service Provider is concerned about safeguarding the
+            confidentiality of your information. The Service Provider provides
+            physical, electronic, and procedural safeguards to protect
+            information the Service Provider processes and maintains.
+          </p>
+        </div>
+        <div class="changes wrapper-access">
+          <h2>Changes</h2>
+          <p>
+            This Privacy Policy may be updated from time to time for any reason.
+            The Service Provider will notify you of any changes to the Privacy
+            Policy by updating this page with the new Privacy Policy. You are
+            advised to consult this Privacy Policy regularly for any changes, as
+            continued use is deemed approval of all changes.
+          </p>
+          <p>This privacy policy is effective as of 2025-01-02</p>
+        </div>
+        <div class="your-consent wrapper-access">
+          <h2>Your Consent</h2>
+          <p>
+            By using the Application, you are consenting to the processing of
+            your information as set forth in this Privacy Policy now and as
+            amended by us.
+          </p>
+        </div>
+        <div class="contact-us wrapper-access">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions regarding privacy while using the
+            Application, or have questions about the practices, please contact
+            the Service Provider via email at Weed420@info.com.
+          </p>
+        </div>
+      </div>
     </section>
+    <footer class="foote-cont container">
+  <ul class="list-foot">
+    <li class="item-foot"><a href="../privacy.html">Privacy Policy</a></li>
+    <li class="trash item-foot"><p>|</p></li>
+    <li class="item-foot"><a href="../terms.html">Terms of Service</a></li>
+    <li class="trash item-foot"><p>|</p></li>
+    <li class="item-foot">
+      <p>
+        ©2024 JoyfulPathZone.com
+        <span class="rights"> All Rights Reserved.</span>
+      </p>
+    </li>
+  </ul>
+</footer>
+
   </body>
 </html>
