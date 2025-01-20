@@ -28,6 +28,11 @@
     padding: 100px 0px 20px 16px;
   }
 }
+#benefits .swiper-wrapper {
+  @include media(desktop) {
+    width: auto;
+  }
+}
 
 #benefits .swiper-slide-active {
   width: 230px;
