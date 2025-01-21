@@ -1,9 +1,8 @@
 .play {
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 80px 16px;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 100%;
   background: white;
   min-width: 289px;
   overflow: hidden;
@@ -19,5 +18,202 @@
     padding-left: 86px;
     padding-right: 86px;
     width: 1200px;
+  }
+}
+.play-head {
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgb(24, 24, 24);
+  font-family: Lato;
+
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  @include media(desktop) {
+    margin-bottom: 48px;
+    font-size: 46px;
+  }
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 17px;
+  @include media(desktop) {
+    width: 1028px;
+    height: 484px;
+    position: relative;
+    padding: 32px 0px;
+  }
+}
+.item-play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 288px;
+  height: 100%;
+  @include media(desktop) {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.head-item {
+  width: 290px;
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 24px 16px 24px 16px;
+  border: 1px solid rgb(142, 206, 70);
+  border-radius: 12px;
+  @include media(desktop) {
+    width: 414px;
+    height: 84px;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 12px 0px 0px 12px;
+  }
+}
+.head-item.active {
+  background: rgb(142, 206, 70);
+  border-radius: 12px 12px 0px 0px;
+}
+.text-play {
+  color: rgb(24, 24, 24);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.btn-down {
+  outline: 0 none;
+  background-color: transparent;
+  border: 0;
+}
+.btn-down {
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+.btn-down.active {
+  transform: rotate(90deg);
+}
+
+.down {
+  width: 24px;
+  height: 24px;
+}
+.item-content {
+  padding: 24px 0px;
+  width: 288px;
+  height: 100%;
+  flex-direction: column;
+  gap: 16px;
+  background-image: url(../img/general/mobile/background.jpg);
+  background-position: center;
+  border-radius: 0px 0px 12px 12px;
+  @include media(desktop) {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 614px;
+    height: 484px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 12px;
+    background-image: url(../img/play/desktop/background@2x.jpg);
+    background-size: cover;
+  }
+}
+.content-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 106px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  opacity: 0.85;
+  margin-top: 16px;
+  padding: 8px 0px 8px 0px;
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  @include media(desktop) {
+    margin: 0;
+
+    padding: 0 10px;
+    position: absolute;
+    bottom: 24px;
+    font-size: 18px;
+  }
+}
+
+.wrapper-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5px;
+
+  img {
+    width: 127.164px;
+    height: 25.543px;
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+  p {
+    text-align: start;
+    color: #181818;
+    font-family: Roboto;
+    font-size: 13.5px;
+    letter-spacing: -0.405px;
+  }
+}
+.join {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(24, 24, 24);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.join > div {
+  text-align: left;
+}
+.join > div:nth-child(2) {
+  text-align: right;
+}
+@include media(desktop) {
+  .join > div {
+    display: flex;
+    flex-direction: row;
+  }
+  .join > div:nth-child(2) {
+    justify-content: end;
+  }
+}
+.sect-goog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 64px;
+  height: 94px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  @include media(desktop) {
+    flex-direction: row;
   }
 }

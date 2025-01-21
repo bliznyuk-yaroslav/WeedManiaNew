@@ -1,6 +1,6 @@
 .cont-choose {
   position: relative;
-  padding: 80px 0px 24px 0px;
+  padding: 80px 0px 40px 0px;
   z-index: 1;
   .head-choose {
     color: $_main_color_white;
@@ -85,8 +85,6 @@
 }
 @include media(desktop) {
   .cont-choose {
-    padding: 80px 0px 16px 0px;
-
     .head-choose {
       font-size: 46px;
       margin-bottom: 43px;
