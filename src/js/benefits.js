@@ -3,17 +3,17 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
 const swiper = new Swiper('#benefits', {
-  loop: false,
-  slidesPerView: 1,
+  loop: true,
   spaceBetween: 28,
   slidesPerView: 'auto',
+  touchMoveStopPropagation: false,
   autoHeight: false,
   pagination: false,
   navigation: false,
-  preventInteractionOnTransition: true,
+  slideToClickedSlide: false,
   allowTouchMove: true,
-
-  breakpoints: {
-    1200: {},
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
 });

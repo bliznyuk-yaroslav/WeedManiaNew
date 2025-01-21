@@ -12,7 +12,6 @@ const swiper = new Swiper('#gallery-slider', {
   touchMoveStopPropagation: false,
   slideToClickedSlide: false,
   allowTouchMove: true,
-  speed: 600,
   pagination: {
     el: '#gallery-slider .swiper-pagination',
     clickable: true,
@@ -31,6 +30,10 @@ const swiper = new Swiper('#gallery-slider', {
     1200: {
       centeredSlides: true,
     },
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
   },
 });
 
