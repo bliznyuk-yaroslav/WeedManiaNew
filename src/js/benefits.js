@@ -10,8 +10,10 @@ const swiper = new Swiper('#benefits', {
   autoHeight: false,
   pagination: false,
   navigation: false,
-  touchMoveStopPropagation: false,
-  slideToClickedSlide: false,
   preventInteractionOnTransition: true,
   allowTouchMove: true,
+
+  breakpoints: {
+    1200: {},
+  },
 });

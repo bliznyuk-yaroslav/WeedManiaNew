@@ -11,8 +11,8 @@ const swiper = new Swiper('#gallery-slider', {
   autoHeight: false,
   touchMoveStopPropagation: false,
   slideToClickedSlide: false,
-  preventInteractionOnTransition: true,
   allowTouchMove: true,
+  speed: 600,
   pagination: {
     el: '#gallery-slider .swiper-pagination',
     clickable: true,

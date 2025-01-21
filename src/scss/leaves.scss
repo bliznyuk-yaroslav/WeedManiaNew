@@ -3,7 +3,7 @@
   width: 320px;
   background: $_main_color_white;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
   @include media(desktop) {
     width: 1200px;
@@ -21,7 +21,7 @@
   background-image: url(/img/general/mobile/foter-leafs@2x.png);
   background-repeat: no-repeat;
   background-size: 320px;
-  z-index: 2;
+  z-index: 5;
 
   @include media(desktop) {
     height: 181px;

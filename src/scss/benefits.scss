@@ -27,6 +27,11 @@
     width: 1200px;
   }
 }
+#benefits .swiper-wrapper {
+  @include media(desktop) {
+    width: auto;
+  }
+}
 
 #benefits .swiper-slide-active {
   width: 230px;
