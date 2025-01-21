@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/WeedManiaNew/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/WeedManiaNew/assets/logo-0bc456cc.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Weed Mania</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,10 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="data:image/png;base64,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" type="image/png" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,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" />
     <script type="module" crossorigin src="/WeedManiaNew/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/WeedManiaNew/assets/vendor-5cf45a11.js">
     <link rel="stylesheet" href="/WeedManiaNew/assets/vendor-6561fb0c.css">
-    <link rel="stylesheet" href="/WeedManiaNew/assets/styles-c7257c95.css">
+    <link rel="stylesheet" href="/WeedManiaNew/assets/styles-d7a9efae.css">
   </head>
   <body>
     <header>
@@ -47,24 +50,38 @@
     <section id="hero" class="hero">
   <div class="container-hero">
     <div class="wrapper-line">
-      <div class="red-line"></div>
-      <div class="yellow-line"></div>
-      <div class="green-line"></div>
+      <div class="red-line">
+        <div class="red-fon"></div>
+      </div>
+      <div class="yellow-line"><div class="yellow-fon"></div></div>
+      <div class="green-line"><div class="green-fon"></div></div>
     </div>
     <div class="wrapper-main-text">
       <div class="title-wrapper">
-        <h1 class="main-tittle">Weed Mania:</h1>
-        <div class="main-text-span">
+        <h1
+          class="main-tittle"
+          data-aos-duration="3000"
+          data-aos="zoom-in-right"
+        >
+          Weed Mania:
+        </h1>
+        <div
+          class="main-text-span"
+          data-aos="zoom-in-left"
+          data-aos-duration="3000"
+        >
           <h1>Chill <span>420</span> Club</h1>
         </div>
       </div>
       <div class="container-text">
-        <ul class="text">
+        <ul class="text" data-aos-duration="3000" data-aos="zoom-in-right">
           <li>Grow,</li>
           <li>Chill,</li>
           <li>and</li>
         </ul>
-        <p>Dominate the 420 World!</p>
+        <p data-aos="zoom-in-left" data-aos-duration="3000">
+          Dominate the 420 World!
+        </p>
       </div>
     </div>
     <button class="btn-main-page js-button-googleplay" type="button">
@@ -75,21 +92,28 @@
       </div>
     </button>
   </div>
-  <div class="image-container">
+  <div class="image-container" data-aos="zoom-in-up" data-aos-duration="3000">
     <div class="image-one"></div>
     <div class="image-two"></div>
   </div>
 </section>
 
     <section class="leaves">
-  <div class="leaves-container"></div>
+  <div
+    class="leaves-container"
+    data-aos-duration="3000"
+    data-aos="zoom-out"
+  ></div>
 </section>
 
     <section id="benefits" class="benefits swiper-container">
   <h2>Benefits</h2>
   <ul class="list-benefits swiper-wrapper">
     <li class="swiper-slide">
-      <div class="image-benefits"></div>
+      <div
+        class="image-benefits"
+        style="background-image: url('/WeedManiaNew/assets/benefits1@2x-fddf2fd5.jpg')"
+      ></div>
       <div class="wrapper-text">
         <h3>Relaxing Gameplay</h3>
         <p>
@@ -98,7 +122,10 @@
       </div>
     </li>
     <li class="swiper-slide">
-      <div class="image-benefits"></div>
+      <div
+        class="image-benefits"
+        style="background-image: url('/WeedManiaNew/assets/benefits2@2x-9c416e1f.jpg')"
+      ></div>
       <div class="wrapper-text">
         <h3>Build Your Empire</h3>
         <p>
@@ -107,14 +134,20 @@
       </div>
     </li>
     <li class="swiper-slide text">
-      <div class="image-benefits"></div>
+      <div
+        class="image-benefits"
+        style="background-image: url('/WeedManiaNew/assets/benefits6@2x-7eacdddc.jpg')"
+      ></div>
       <div class="wrapper-text">
         <h3>Creative Customization</h3>
         <p>Design your cannabis farm with unique decorations and upgrades</p>
       </div>
     </li>
     <li class="swiper-slide">
-      <div class="image-benefits"></div>
+      <div
+        class="image-benefits"
+        style="background-image: url('/WeedManiaNew/assets/benefits4@2x-372800e6.jpg')"
+      ></div>
       <div class="wrapper-text">
         <h3>Community Vibes</h3>
         <p>
@@ -123,7 +156,10 @@
       </div>
     </li>
     <li class="swiper-slide">
-      <div class="image-benefits"></div>
+      <div
+        class="image-benefits"
+        style="background-image: url('/WeedManiaNew/assets/benefits3@2x-b5815b4d.jpg')"
+      ></div>
       <div class="wrapper-text">
         <h3>Rewards Galore</h3>
         <p>
@@ -164,70 +200,75 @@
   </div>
 </section>
 
-    <section id="why-choose-us" class="cont-choose container">
-  <div class="cloud"></div>
-  <h1 class="head-choose">Why Choose Us</h1>
-  <ul class="list-choose">
-    <li class="item">
-      <img
-        src="/WeedManiaNew/assets/choose1-78289d64.png"
-        srcset="/WeedManiaNew/assets/choose1-78289d64.png 1x, /WeedManiaNew/assets/choose1@2x-1e637086.png 2x"
-        alt=""
-      />
-      <div class="text-item">
-        <h2 class="yellow">Chill Atmosphere</h2>
-        <p class="chil">Perfect for unwinding after a busy day</p>
-      </div>
-    </li>
-    <li class="item">
-      <img
-        src="/WeedManiaNew/assets/choose2-52407f76.png"
-        srcset="/WeedManiaNew/assets/choose2-52407f76.png 1x, /WeedManiaNew/assets/choose2@2x-e749b552.png 2x"
-        alt=""
-      />
-      <div class="text-item">
-        <h2>Regular Updates</h2>
-        <p class="reg">New strains, events, and challenges added frequently</p>
-      </div>
-    </li>
-    <li class="item">
-      <img
-        src="/WeedManiaNew/assets/choose3-050d3e45.png"
-        srcset="/WeedManiaNew/assets/choose3-050d3e45.png 1x, /WeedManiaNew/assets/choose3@2x-095bc96e.png 2x"
-        alt=""
-      />
-      <div class="text-item">
-        <h2>Global Community</h2>
-        <p class="glob">
-          Join players worldwide in competitions and leaderboards
-        </p>
-      </div>
-    </li>
-    <li class="item">
-      <img
-        src="../img/general/desktop/choose4.png"
-        srcset="/WeedManiaNew/assets/choose1-78289d64.png 1x, /WeedManiaNew/assets/choose1@2x-1e637086.png 2x"
-        alt=""
-      />
-      <div class="text-item">
-        <h2 class="yellow">Accessible Fun</h2>
-        <p class="acces">Easy to learn, hard to put down.</p>
-      </div>
-    </li>
-    <li class="item">
-      <img
-        src="/WeedManiaNew/assets/choose3-050d3e45.png"
-        srcset="/WeedManiaNew/assets/choose3-050d3e45.png 1x, /WeedManiaNew/assets/choose3@2x-095bc96e.png 2x"
-        alt=""
-      />
-      <div class="text-item">
-        <h2>Dynamic Gameplay</h2>
-        <p class="dynam">
-          Combines farming, strategy, and creative customization
-        </p>
-      </div>
-    </li>
-  </ul>
+    <section id="why-choose-us" class="back-white">
+  <div class="cont-choose container">
+    <div class="cloud1"></div>
+    <div class="cloud2"></div>
+    <div class="cloud3"></div>
+    <div class="cloud4"></div>
+    <div class="cloud5"></div>
+
+    <h1 class="head-choose">Why Choose Us</h1>
+    <ul class="list-choose">
+      <li class="item">
+        <img
+          src="/WeedManiaNew/assets/choose1-78289d64.png"
+          srcset="/WeedManiaNew/assets/choose1-78289d64.png 1x, /WeedManiaNew/assets/choose1@2x-1e637086.png 2x"
+          alt=""
+        />
+        <div class="text-item">
+          <h2 class="yellow">Chill Atmosphere</h2>
+          <p>Perfect for unwinding after a busy day</p>
+        </div>
+      </li>
+      <li class="item">
+        <img
+          src="/WeedManiaNew/assets/choose2-52407f76.png"
+          srcset="/WeedManiaNew/assets/choose2-52407f76.png 1x, /WeedManiaNew/assets/choose2@2x-e749b552.png 2x"
+          alt=""
+        />
+        <div class="text-item">
+          <h2>Regular Updates</h2>
+          <p>New strains, events, and challenges added frequently</p>
+        </div>
+      </li>
+      <li class="item">
+        <img
+          src="/WeedManiaNew/assets/choose3-050d3e45.png"
+          srcset="/WeedManiaNew/assets/choose3-050d3e45.png 1x, /WeedManiaNew/assets/choose3@2x-095bc96e.png 2x"
+          alt=""
+        />
+        <div class="text-item">
+          <h2>Global Community</h2>
+          <p>Join players worldwide in competitions and leaderboards</p>
+        </div>
+      </li>
+      <li class="item">
+        <img
+          src="../img/general/desktop/choose4.png"
+          srcset="/WeedManiaNew/assets/choose1-78289d64.png 1x, /WeedManiaNew/assets/choose1@2x-1e637086.png 2x"
+          alt=""
+        />
+        <div class="text-item">
+          <h2 class="yellow">Accessible Fun</h2>
+          <p>
+            Easy to learn,<span style="display: block"> hard to put down.</span>
+          </p>
+        </div>
+      </li>
+      <li class="item">
+        <img
+          src="/WeedManiaNew/assets/choose3-050d3e45.png"
+          srcset="/WeedManiaNew/assets/choose3-050d3e45.png 1x, /WeedManiaNew/assets/choose3@2x-095bc96e.png 2x"
+          alt=""
+        />
+        <div class="text-item">
+          <h2>Dynamic Gameplay</h2>
+          <p>Combines farming, strategy, and creative customization</p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
     <section id="how-to-play" class="play">
@@ -241,7 +282,21 @@
         </button>
       </div>
       <div class="item-content">
-        <img class="btn-arrow" src="/WeedManiaNew/assets/play1-518ac8a2.jpeg" alt="" />
+        <picture>
+          <source
+            srcset="/WeedManiaNew/assets/play1-8582f473.jpg "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="/WeedManiaNew/assets/play1-5c2726d9.jpg "
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="btn-arrow"
+            src="/WeedManiaNew/assets/play1-5c2726d9.jpg"
+            alt="Plant and Grow"
+          />
+        </picture>
         <p class="content-text">
           Start with basic strains and nurture your plants
           <span> to full bloom</span>
@@ -256,7 +311,21 @@
         </button>
       </div>
       <div class="item-content">
-        <img class="btn-arrow" src="/WeedManiaNew/assets/play2-305db414.jpg" alt="" />
+        <picture>
+          <source
+            srcset="/WeedManiaNew/assets/play2-ade82293.jpg "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="/WeedManiaNew/assets/play2-49c35dd5.jpg "
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="btn-arrow"
+            src="/WeedManiaNew/assets/play2-49c35dd5.jpg"
+            alt="Plant and Grow"
+          />
+        </picture>
         <p class="content-text">
           Collect your yield and trade <span>it for in-game currency</span>
         </p>
@@ -270,7 +339,21 @@
         </button>
       </div>
       <div class="item-content">
-        <img class="btn-arrow" src="/WeedManiaNew/assets/play3-b7aaee58.jpg" alt="" />
+        <picture>
+          <source
+            srcset="/WeedManiaNew/assets/play3-9cfa9bc9.jpg "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="/WeedManiaNew/assets/play3-7b930beb.jpg "
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="btn-arrow"
+            src="/WeedManiaNew/assets/play3-7b930beb.jpg"
+            alt="Plant and Grow"
+          />
+        </picture>
         <p class="content-text">
           Upgrade equipment, unlock new strains, and decorate your farm
         </p>
@@ -284,7 +367,21 @@
         </button>
       </div>
       <div class="item-content">
-        <img class="btn-arrow" src="/WeedManiaNew/assets/play4-11cc358a.jpg" alt="" />
+        <picture>
+          <source
+            srcset="/WeedManiaNew/assets/play4-dba3dd07.jpg "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="/WeedManiaNew/assets/play4-2f246bc4.jpg "
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="btn-arrow"
+            src="/WeedManiaNew/assets/play4-2f246bc4.jpg"
+            alt="Plant and Grow"
+          />
+        </picture>
         <p class="content-text">
           Participate in events to earn exclusive rewards and boost your ranking
         </p>
@@ -298,7 +395,21 @@
         </button>
       </div>
       <div class="item-content">
-        <img class="btn-arrow" src="./img/play/mobile/play5.jpg" alt="" />
+        <picture>
+          <source
+            srcset="/WeedManiaNew/assets/play5-61902ed4.jpg "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="./img/play/mobile/play5.jpg"
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="btn-arrow"
+            src="/WeedManiaNew/assets/play4-2f246bc4.jpg"
+            alt="Plant and Grow"
+          />
+        </picture>
         <p class="content-text">
           Immerse yourself in a relaxing, creative experience while building
           your 420 empire
@@ -317,25 +428,33 @@
         <p>Chill 420 Club today!</p>
       </div>
     </div>
-    <button class="btn-main-page js-button-googleplay" type="button">
+    <button class="btn-main-page-play js-button-googleplay" type="button">
       <img src="data:image/png;base64,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" alt="google" />
       <div class="wrapper-img">
         <p>Download now on</p>
-        <img src="data:image/png;base64,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" alt="google_play" />
+        <img
+          class="btn-arrow"
+          src="data:image/png;base64,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"
+          alt="google_play"
+        />
       </div>
     </button>
   </div>
 </section>
 
     <section class="leaves">
-  <div class="leaves-container"></div>
+  <div
+    class="leaves-container"
+    data-aos-duration="3000"
+    data-aos="zoom-out"
+  ></div>
 </section>
 
     <footer class="foote-cont container">
   <ul class="list-foot">
-    <li class="item-foot"><a href="../privacy.html">Privacy Policy</a></li>
+    <li class="item-foot"><a href="/privacy.html">Privacy Policy</a></li>
     <li class="trash item-foot"><p>|</p></li>
-    <li class="item-foot"><a href="../terms.html">Terms of Service</a></li>
+    <li class="item-foot"><a href="/terms.html">Terms of Service</a></li>
     <li class="trash item-foot"><p>|</p></li>
     <li class="item-foot">
       <p>
@@ -359,7 +478,7 @@
         aria-label="Close menu"
       >
         <img
-          src="../img/general/mobile/closed@2x.png"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAkCAYAAADPRbkKAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH+SURBVHgBxZlBasJAFIZfEhARhWwExU17A4/Q7nqE7nqFLrurPVFx2ZX0Bu0JXAkBF3UhQhZq3y8ZSENmzGTeSz8IMWOS+b84SV4ikYPpdPrM089kMlmPx+M5dcRsNpubfnl6cq0b2b7gDW94tjbL5/N5dzqd7rfb7RcpgvDcz4r7S02/eZ7f7pi69WPbjpIkScvLURSlcRyvNH+JanjTr2sbq8Bms8GRXpTbNCXqwhcsbEcfJORgv99/DodDfLwzbSzR5+lxMBh8HA6HjARwhc+y7M21rVMAaEuEhAdXBYCWRGh40EgASEtIhAeNBYCUhFR44CUAQiUkwwNvAdBWQjo8aCUAfCU0woPWAqCphFb4S38kANdNr1S5a5vaqdfrkVZ4ICIAbBJcepBWeBA0hMrYhhPP+pVVxcIDMQFQJ1FBNDyISRguw5d17RhOx+NxScKICpirTd13WqW42EnsuFT+QfrJTkTAdZ2vzC9ISgSfxNduUtrPE0ECTe+wmhKtBXzLAy2JVgJtaxsNCW+B0MJMWsJLQKqqlJRoLCBdEktJNBLQquclJK4KaD6MgFAJp4B2eEOIhFWgq/CGthLWapRL3/euwhuKfS/KbaaKtW1jFah5ra0a3mCR8H87PRqNcp49FIudhDeUh1MR/oXbvskX/EuDc4H+ibTAtc4v4whYH5uY4+IAAAAASUVORK5CYII="
           alt="close menu"
           class="img-close-btn"
         />
@@ -396,5 +515,10 @@
 
 
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    ;
   </body>
 </html>
