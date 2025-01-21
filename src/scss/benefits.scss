@@ -29,7 +29,7 @@
 }
 #benefits .swiper-wrapper {
   @include media(desktop) {
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -72,29 +72,11 @@
   }
 }
 
-.list-benefits li:nth-child(1) .image-benefits {
-  background: url('/img/benefits/desktop/benefits1@2x.jpg') lightgray 50% /
-    cover no-repeat;
-}
-
-.list-benefits li:nth-child(2) .image-benefits {
-  background: url('/img/benefits/desktop/benefits2@2x.jpg') lightgray 50% /
-    cover no-repeat;
-}
-
-.list-benefits li:nth-child(3) .image-benefits {
-  background: url('/img/benefits/desktop/benefits6@2x.jpg') lightgray 50% /
-    cover no-repeat;
-}
-
-.list-benefits li:nth-child(4) .image-benefits {
-  background: url('/img/benefits/desktop/benefits4@2x.jpg') lightgray 50% /
-    cover no-repeat;
-}
-
-.list-benefits li:nth-child(5) .image-benefits {
-  background: url('/img/benefits/desktop/benefits3@2x.jpg') lightgray 50% /
-    cover no-repeat;
+.list-benefits .image-benefits {
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper-text {
