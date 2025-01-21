@@ -155,26 +155,6 @@
   }
 }
 
-.wrapper-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3.5px;
-
-  img {
-    width: 127.164px;
-    height: 25.543px;
-    flex-shrink: 0;
-    margin-right: 0;
-  }
-  p {
-    text-align: start;
-    color: #181818;
-    font-family: Roboto;
-    font-size: 13.5px;
-    letter-spacing: -0.405px;
-  }
-}
 .join {
   width: 100%;
   display: flex;
@@ -208,12 +188,56 @@
 .sect-goog {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
+
   gap: 64px;
   height: 94px;
   margin-top: 100px;
   margin-bottom: 80px;
   @include media(desktop) {
     flex-direction: row;
+  }
+}
+.btn-main-page-play {
+  display: flex;
+  width: 289px;
+  height: 62px;
+  padding: 8.5px 0 8.5px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #181818;
+  background: $_main_color_white;
+
+  img {
+    width: 34.607px;
+    height: 38.549px;
+    flex-shrink: 0;
+    margin-right: 8.93px;
+  }
+
+  @include media(desktop) {
+    margin-top: auto;
+  }
+}
+
+.wrapper-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5px;
+
+  img {
+    width: 127.164px;
+    height: 25.543px;
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+  p {
+    text-align: start;
+    color: #181818;
+    font-family: Roboto;
+    font-size: 13.5px;
+    letter-spacing: -0.405px;
   }
 }
