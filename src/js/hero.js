@@ -1,6 +1,8 @@
-const buttonElemGoogle = document.querySelector('.js-button-googleplay');
+const buttonElemGoogle = document.querySelectorAll('.js-button-googleplay');
 
-buttonElemGoogle.addEventListener('click', () => {
-  window.location.href =
-    'https://play.google.com/store/apps/details?id=com.sfgh.weedmania.gp';
+buttonElemGoogle.forEach(button => {
+  button.addEventListener('click', () => {
+    window.location.href =
+      'https://play.google.com/store/apps/details?id=com.sfgh.weedmania.gp';
+  });
 });

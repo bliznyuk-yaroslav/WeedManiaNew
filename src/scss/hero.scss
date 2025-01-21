@@ -43,14 +43,29 @@
 
 .red-line {
   background: $_line_color_red;
+  .red-fon {
+    border-radius: 12px;
+    filter: blur(90.6px);
+    background: rgb(234, 28, 36);
+  }
 }
 
 .yellow-line {
   background: $_line_color_yellow;
+  .yellow-fon {
+    border-radius: 12px;
+    filter: blur(90.6px);
+    background: rgb(255, 240, 2);
+  }
 }
 
 .green-line {
   background: $_line_color_green;
+  .green-fon {
+    border-radius: 12px;
+    filter: blur(90.6px);
+    background: rgb(0, 165, 82);
+  }
 }
 
 .wrapper-main-text {
