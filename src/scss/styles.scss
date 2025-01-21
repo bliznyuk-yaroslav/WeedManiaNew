@@ -12,7 +12,7 @@
   font-family: 'Lato', sans-serif;
   @include font(18, 27);
   font-weight: 400;
-
+  scroll-behavior: smooth;
   color: $_main_color_black;
   background-color: $_main_color_white;
 
