@@ -224,6 +224,7 @@
   border-radius: 4px;
   border: 1px solid #181818;
   background: $_main_color_white;
+  transition: background 0.3s ease-in-out;
 
   img {
     width: 34.607px;
@@ -237,12 +238,22 @@
   }
 }
 
+.btn-main-page-play:hover,
+.btn-main-page-play:focus,
+.btn-main-page-play:active {
+  background: #f6f3b5;
+}
+
+.wrapper-img .google-play-text {
+  color: $_color_text;
+  font-weight: 700;
+  @include font(25, 30);
+}
+
 .wrapper-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3.5px;
-
   img {
     width: 127.164px;
     height: 25.543px;
@@ -250,11 +261,9 @@
     margin-right: 0;
   }
   p {
+    @include font(14, 21);
     text-align: start;
     color: #181818;
-    font-family: Roboto;
-    font-size: 13.5px;
-    letter-spacing: -0.405px;
   }
 }
 .btn-arrow {
